@@ -1,0 +1,91 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.myapplication2.app.MainActivity">
+
+    <TextView
+        android:text="joke"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/jokeText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:textSize="12dp"/>
+
+    <TextView
+        android:text=""
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/center1"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/jokeText"
+        android:textSize="12dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Random Joke"
+        android:id="@+id/btnRandom"
+        android:layout_below="@+id/jokeText"
+        android:layout_toLeftOf="@+id/center1"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Queue Lots"
+        android:id="@+id/btnRandomQueue"
+        android:layout_below="@+id/jokeText"
+        android:layout_toRightOf="@+id/center1"/>
+
+    <TextView
+        android:text="joke"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/jokeText1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:layout_below="@+id/btnRandom"
+        android:textSize="12dp"/>
+
+    <TextView
+        android:text=""
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/center"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/jokeText1"
+        android:textSize="12dp"/>
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+    android:id="@+id/editText"
+    android:layout_below="@+id/jokeText1"
+        android:layout_toLeftOf="@+id/center"
+        android:hint="Joke ID"
+        android:layout_marginTop="10dp"
+        android:inputType="number"/>
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Get Joke By Id"
+        android:id="@+id/btnRandom1"
+        android:layout_below="@+id/jokeText1"
+        android:layout_toRightOf="@+id/center"/>
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Clear Cache"
+        android:id="@+id/btnClear"
+        android:layout_below="@+id/btnRandom1"
+        android:layout_marginBottom="30dp"/>
+
+</RelativeLayout>
